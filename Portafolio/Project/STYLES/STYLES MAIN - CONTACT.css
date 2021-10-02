@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*.main{
+    background-image: url(/Assetss/img/background.jpeg);
+    background-size: cover;
+}*/
+
+.name_logo img {
+    width: 120px;
+    height:120px;
+    margin-top: 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 10 15 20 5 #272640;
+}
+
+.secondary>a {
+    color: #212f45;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    font-weight: bolder;
+    flex-direction:row-reverse;
+    width: 70%;
+}
+
+li:hover{
+    border-bottom: solid #272640;
+    transition: .1s;
+    
+}
+
+li a {
+    text-decoration: none;
+    color:#272640;
+    font-family: 'Syne', sans-serif;
+    font-size: 25px;
+}
+
+.menu li {
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 180px;
+}
+
+.header h1{
+    font-size: 50px;
+}
+
+.header h2{
+    margin-top: 40px;
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+}
+
+.header h3{
+    margin-top: 40px;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
+
+.social_media{
+    display: flex;
+    margin-top: 60px;
+}
+
+.social_media img{
+    width: 30px;
+    height: auto;
+    margin: 20px;
+}
+
+footer>p{
+    margin-top: 70px;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+/*CONTACT HTML - BOOK INDEX*/
+
+.table{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: #272640;
+}
+
+.chart{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    font-family: 'Syne', sans-serif;
+    box-shadow: 1.5px 12px 20px 6px #e5e5e5;
+    border-radius: 20px;
+}
+
+.chart h3{
+    margin: 15px;
+    
+}
+
+.chart label{
+    margin-top: 15px;
+    margin-bottom: 6px;
+    
+}
+
+.chart>input{
+    text-align: center;
+    width: 350px;
+    height: 26px;
+    border-radius: 50px;
+}
+
+.chart>#query{
+    height: 50px;
+    text-align: start;
+}
+
+.chart>select{
+    background-color: #212f45;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: 'Syne', sans-serif;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.chart>button{
+    background-color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-family: 'Syne', sans-serif;
+    color: black;
+    margin: 20px;
+}
+
+.chart>button:hover{
+    background-color: #212f45;
+    color: white;
+}
