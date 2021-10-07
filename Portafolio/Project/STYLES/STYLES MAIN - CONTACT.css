@@ -60,7 +60,7 @@ header {
 
 .header h1{
     font-size: 90px;
-    font-family: 'Akronim', cursive;
+    font-family: 'Caveat', cursive;
 }
 
 .header h2{
@@ -169,7 +169,7 @@ footer>p{
     color: white;
 }
 
-/*SLIDESHOW ABOUT => GALLERY*/
+/*SLIDESHOW GALLERY*/
 
 .slidershow{
     width: 850px;
@@ -245,4 +245,85 @@ input[name="r"]{
 
 #r5:checked ~ .s1{
     margin-left: -80%;
+}
+
+/*STYLES FOR CONTENT - FLIPPING CARDS*/
+.languages{
+    display: flex;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.theCard{
+    width: 220px;
+    height: 280px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.theCard:hover{
+    transform:rotateY(180deg)
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #272640;
+    border-radius: 40px;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: green;
+    transform: rotateY(180deg);
+    border-radius: 30px;
+}
+
+.langTitle{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Caveat', cursive;
+}
+
+.front img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.back img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Caveat', cursive;
+}
+
+.back>h3{
+    text-align: center;
+    margin-top: -70%;
+    font-family: 'Caveat', cursive;
+}
+
+.back>#pth{
+    color: yellow;
 }
